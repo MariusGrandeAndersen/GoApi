@@ -1,0 +1,43 @@
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+
+# 4 space indentation for Go files
+[*.go]
+indent_style = space
+indent_size = 4
+
+# 2 space indentation for JSON and YAML files
+[*.{json,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Tab indentation for Makefiles
+[Makefile]
+indent_style = tab
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+
+# Configuration files
+[*.{ini,toml}]
+indent_style = space
+indent_size = 2
+
+# General settings for text files
+[*.txt]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Override for specific project files
+[.editorconfig]
+indent_style = space
+indent_size = 2

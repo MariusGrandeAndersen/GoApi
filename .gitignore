@@ -1,0 +1,48 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with 'go test -c'
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Ignore the vendor directory
+/vendor/
+
+# Ignore any binary files
+*.bin
+
+# Ignore go generate files
+/_generated/
+
+# Ignore .DS_Store file on macOS
+.DS_Store
+
+# Ignore .env file (contains sensitive information)
+.env
+
+# Ignore OS-specific files
+Thumbs.db
+Desktop.ini
+
+# Ignore IDE-specific files and directories
+.idea/
+.vscode/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# Ignore any backup files
+*~
+
+bin/*
+
+test.db
