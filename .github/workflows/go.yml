@@ -34,3 +34,21 @@ jobs:
 
     - name: Build
       run: go build -v ./cmd/api
+
+    - name: Test
+      run: go test -v ./...
+
+    - name: Install gocov
+      run: go get github.com/axw/gocov/gocov
+
+    - name: Run code coverage
+      run: |
+        go test -coverprofile=coverage.out ./...
+        gocov convert coverage.out | gocov report
+
+    - name: Upload code coverage report
+      if: ${{ github.event_name == 'push' }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage-report
+        path: coverage.out
