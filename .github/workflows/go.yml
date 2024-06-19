@@ -38,15 +38,12 @@ jobs:
     - name: Test
       run: go test -v ./...
 
-    - name: Install gocov
-      run: go get github.com/axw/gocov/gocov
-
     - name: Convert coverage report
-      run: gocov convert coverage.out > coverage.json
+      run: go tool cover -func=coverage.out > coverage.txt
 
     - name: Upload coverage report
       if: ${{ github.event_name == 'push' }}
       uses: actions/upload-artifact@v2
       with:
         name: coverage-report
-        path: coverage.json
+        path: coverage.txt
