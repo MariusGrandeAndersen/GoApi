@@ -20,7 +20,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v5
       with:
-        go-version: 1.21.4
+        go-version: "1.21.4"
 
     - name: Install dependencies
       run: |
@@ -37,6 +37,9 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+
+    - name: Install gocov
+      run: go get github.com/axw/gocov/gocov
 
     - name: Convert coverage report
       run: gocov convert coverage.out > coverage.json
