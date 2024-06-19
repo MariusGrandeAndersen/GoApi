@@ -6,6 +6,8 @@ import (
 	"go_api/internal/repository"
 	"go_api/internal/service"
 
+	"log"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -20,5 +22,8 @@ func main() {
 	r.GET("/users", userController.GetUsers)
 	r.POST("/users", userController.CreateUser)
 
-	r.Run()
+	// Start the server and handle errors
+	if err := r.Run(); err != nil {
+		log.Fatalf("Failed to start server: %v", err)
+	}
 }
