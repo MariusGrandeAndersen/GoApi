@@ -1,0 +1,13 @@
+{
+    "go.formatTool": "goimports",
+    "editor.formatOnSave": true,
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "extensions.ignoreRecommendations": false,
+    "recommendations": [
+        "ms-vscode.go",  // Go extension for VSCode
+        "esbenp.prettier-vscode", // Prettier extension for VSCode
+        "editorconfig.editorconfig" // EditorConfig extension for VSCode
+    ]
+}
