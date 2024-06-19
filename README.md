@@ -1,6 +1,6 @@
 # Go API Project
 
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![workflow](https://github.com/MariusGrandeAndersen/GoApi/workflows/Go%20CI/CD/badge.svg)
 [![codecov](https://codecov.io/github/MariusGrandeAndersen/GoApi/graph/badge.svg?token=06NCK1LEK9)](https://codecov.io/github/MariusGrandeAndersen/GoApi)
 
 A brief description of your project.
