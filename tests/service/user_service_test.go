@@ -1,4 +1,4 @@
-package service
+package service_test
 
 import (
 	"go_api/internal/service"
