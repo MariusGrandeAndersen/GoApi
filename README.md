@@ -2,6 +2,7 @@
 
 ![workflow](https://github.com/MariusGrandeAndersen/GoApi/workflows/Go%20CI/CD/badge.svg)
 [![codecov](https://codecov.io/github/MariusGrandeAndersen/GoApi/graph/badge.svg?token=06NCK1LEK9)](https://codecov.io/github/MariusGrandeAndersen/GoApi)
+[![maintainability](https://api.codeclimate.com/v1/badges/da3662ad184a3a3e06a3/maintainability)](https://codeclimate.com/github/MariusGrandeAndersen/GoApi/maintainability)
 
 A brief description of your project.
 
@@ -20,7 +21,7 @@ A brief description of your project.
 
 ## Overview
 
-Describe your project briefly.
+Simple Go API that you can query users and add new users that get saved to a sqllite file
 
 ## Prerequisites
 
