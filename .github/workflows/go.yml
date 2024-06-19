@@ -47,7 +47,6 @@ jobs:
         token: ${{ secrets.CODECOV_TOKEN }}
 
     # - name: Upload coverage report
-    #   if: ${{ github.event_name == 'push' }}
     #   uses: actions/upload-artifact@v4
     #   with:
     #     name: coverage-report

@@ -1,5 +1,7 @@
 # Go API Project
 
+[![codecov](https://codecov.io/github/MariusGrandeAndersen/GoApi/graph/badge.svg?token=06NCK1LEK9)](https://codecov.io/github/MariusGrandeAndersen/GoApi)
+
 A brief description of your project.
 
 ## Table of Contents
