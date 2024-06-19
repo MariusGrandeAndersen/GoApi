@@ -27,5 +27,8 @@ jobs:
         go mod tidy
         go mod download
 
+    - name: Lint with golangci-lint
+      run: golangci-lint run ./...
+
     - name: Build
       run: go build -v ./cmd/api
